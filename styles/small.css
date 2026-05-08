@@ -2,6 +2,7 @@
     --background: #004643;
     --headline: #fffffe;
     --paragraph: #abd1c6;
+    --paragraph-strong: #36a686;
     --button: #f9bc60;
     --button-text: #001e1d;
     --highligh: #fef6e4;
@@ -11,6 +12,7 @@
 
 * {
     font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
 }
 
 /* HEADER  */
@@ -20,7 +22,7 @@ header {
     grid-template-columns: 24px auto 44px;
     padding: 10px 0 10px 10px;
     align-items: center;
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px var(--paragraph);
     column-gap: 8px;
 }
 
@@ -51,4 +53,37 @@ header span {
 
 .hamburger.show::before {
     content: "\00d7";
+}
+
+/* NAVIGATION */
+.navigation {
+    display: none;
+    background-color: var(--paragraph);
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    color: var(--button-text);
+    font-weight: 700;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    border-bottom: 2px solid var(--button-text);
+}
+
+.navigation a:hover {
+    background-color: var(--paragraph-strong);
+}
+
+.navigation li.current {
+    background-color: var(--paragraph-strong);
 }
