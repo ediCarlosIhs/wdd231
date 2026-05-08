@@ -1,0 +1,54 @@
+:root {
+    --background: #004643;
+    --headline: #fffffe;
+    --paragraph: #abd1c6;
+    --button: #f9bc60;
+    --button-text: #001e1d;
+    --highligh: #fef6e4;
+    --main: #e8e4e6;
+    --tertiary: #e16162;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+/* HEADER  */
+header {
+    background: var(--background);
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 10px 0 10px 10px;
+    align-items: center;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--headline);
+}
+
+/* HAMBURGER */
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--paragraph);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00d7";
+}
