@@ -214,15 +214,17 @@ footer {
     height: 44px;
     border: var(--paragraph) solid 1px;
     border-radius: 22px;
+    color: var(--paragraph);
 }
 
-.social img {
+.social svg {
     width: 22px;
     height: 22px;
 }
 
 .social a:hover {
-    background-color: #ddd;
+    color: var(--button);
+    border: var(--button) solid 1px;
 }
 
 footer p {
