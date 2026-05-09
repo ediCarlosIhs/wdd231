@@ -10,11 +10,9 @@ function createCard(coursesList) {
 
     coursesDiv.innerHTML = "";
 
-    let coursesTotalCredit = 0;
+    // let coursesTotalCredit = 0;
 
     coursesList.forEach(course => {
-
-        coursesTotalCredit += course.credits;
 
         const p = document.createElement("p");
     
@@ -31,7 +29,7 @@ function createCard(coursesList) {
         coursesDiv.appendChild(p);
     }) 
 
-    totalCredits.textContent = coursesTotalCredit;
+    totalCredits.textContent = coursesList.reduce((total, course) => total + course.credits, 0);
 
 }
 

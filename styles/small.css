@@ -38,6 +38,15 @@ header span {
 }
 
 /* HAMBURGER */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border-width: 0;
+    padding: 0;
+}
+
 .hamburger {
     background: none;
     border: none;
