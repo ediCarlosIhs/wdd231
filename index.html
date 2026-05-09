@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/certificate.js" type="module"></script>
 </head>
 
 <body>
@@ -41,11 +42,13 @@
 
         <section>
             <h2>About Me</h2>
-            <p>I am Edi Carlos. I am from Brazil, and I live in Votorantim City, Sao Paulo state. I am marriage, me and my wife have four childreen (one is already in Heaven). In this
+            <p>I am Edi Carlos. I am from Brazil, and I live in Votorantim City, Sao Paulo state. I am marriage, me and
+                my wife have four childreen (one is already in Heaven). In this
                 moment, I work as teacher in a public school, and I am studying and doing projects to get job
                 oportunities as developer. I have worked for over twenty years as IT support in a supermarket, and
                 recently I started working in software Industry (I had six month working as fullstack in Microsot .net
-                tecnology). I did System Analysis and Development in Fatec College. Fatec is the College of Tecnology of the Sao Paulo State. I have started
+                tecnology). I did System Analysis and Development in Fatec College. Fatec is the College of Tecnology of
+                the Sao Paulo State. I have started
                 studing Software Development in BYU (and I am so happy doing it).</p>
         </section>
 
@@ -60,20 +63,14 @@
             <h2>WEb Certificate Courses</h2>
 
             <div class="section-body">
-                
+
                 <div class="controls">
-                    <button>All</button>
-                    <button>CSE</button>
-                    <button>WDD</button>
+                    <button id="allCourses">All</button>
+                    <button id="cseCourses">CSE</button>
+                    <button id="wddCourses">WDD</button>
                 </div>
 
-                <div class="courses">
-                    <p>CSE 110</p>
-                    <P>wdd 130</P>
-                    <p>CSE 111</p>
-                    <p>CSE 210</p>
-                    <p>WDD 131</p>
-                    <p>WDD 231</p>
+                <div class="courses" id="coursesDiv">
                 </div>
 
                 <p>The total credits for course listed above is <span id="totalCredits">6</span></p>
@@ -82,7 +79,20 @@
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+
+        <div class="social">
+            <a href="https://github.com/edicarlosihs" target="_blank"><img src="images/github.svg" alt="github"
+                    width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/edi-carlos-silva/" target="_blank"><img src="images/linkedin.svg"
+                    alt="Linked in" width="16" height="16"></a>
+            <a href="https://x.com/EDI_CSILVA" target="_blank"><img src="images/twitter-x.svg" alt="twitter X"
+                    width="16" height="16"></a>
+            <a href="https://www.instagram.com/edi.carlosihs/" target="_blank"><img src="images/instagram.svg"
+                    alt="instagram" width="16" height="16"></a>
+        </div>
+
+    </footer>
 
 </body>
 
