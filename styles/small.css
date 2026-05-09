@@ -215,3 +215,8 @@ footer {
 .social a:hover {
     background-color: #ddd;
 }
+
+footer p {
+    color: var(--paragraph);
+    line-height: 1.6;
+}

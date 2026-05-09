@@ -19,6 +19,7 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/certificate.js" type="module"></script>
+    <script src="scripts/date.js" defer></script>
 </head>
 
 <body>
@@ -55,11 +56,14 @@
         <section>
             <h2>Student Photo</h2>
             <div class="student-photo">
-                <img src="images/edi-carlos.webp" alt="Student Photo">
+                <picture>
+                    <source media="(min-width: 608px)" srcset="images/edi-carlos-lg.webp">
+                    <img src="images/edi-carlos.webp" alt="Student Photo">
+                </picture>
             </div>
         </section>
 
-        <section>
+        <section class="webCertificate">
             <h2>WEb Certificate Courses</h2>
 
             <div class="section-body">
@@ -91,6 +95,9 @@
             <a href="https://www.instagram.com/edi.carlosihs/" target="_blank"><img src="images/instagram.svg"
                     alt="instagram" width="16" height="16"></a>
         </div>
+
+        <p>&copy;<span id="currentYear"></span> 🚀 Edi Carlos da Silva 🚀 Votorantim, Brazil</p>
+        <p id="lastModified">Last Modification</p>
 
     </footer>
 
