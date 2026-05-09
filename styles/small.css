@@ -87,3 +87,91 @@ header span {
 .navigation li.current {
     background-color: var(--paragraph-strong);
 }
+
+/* MAIN */
+
+main {
+    background-color: var(--headline);
+    padding: 1rem 10px;
+}
+
+h1 {
+    margin: 0;
+    color: var(--background);
+}
+
+section {
+    background-color: var(--paragraph);
+    margin-top: 1rem;
+}
+
+section h2 {
+    background-color: var(--background);
+    margin: 0;
+    padding: .5rem;
+    text-align: center;
+    color: var(--headline);
+}
+
+section p {
+    padding: 10px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+section .student-photo {
+    padding: 1rem;
+    text-align: center;
+}
+
+section img {
+    /* display: inline; */
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.section-body {
+    padding: 1rem;
+}
+
+.controls {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: space-around;
+}
+
+.controls button {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    padding: .8rem;
+    border-radius: 5px;
+    color: var(--headline);
+    background-color: var(--background);
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.courses {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.courses p {
+    margin: 0;
+    background-color: var(--background);
+    border-radius: 10px;
+    text-align: center;
+    color: var(--headline);
+}
+
+.section-body p {
+    margin-top: 0;
+    text-align: center;
+}
