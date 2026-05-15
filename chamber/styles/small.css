@@ -3,9 +3,12 @@
     --headline: #232323;
     --paragraph: #222525;
     --button: #078080;
+    --button-hover: #005a5a;
     --main: #fffffe;
     --secondary: #f45d48;
+    /* https://www.happyhues.co/palettes/8 */
 }
+
 
 * {
     font-family: "Roboto", sans-serif;
@@ -23,8 +26,14 @@ header {
     column-gap: 8px;
 }
 
+.chamber {
+    font-size: 1.5rem;
+    display: block;
+}
+
 header p {
     margin: 0;
+    font-size: .8rem;
 }
 
 .page-controls {
@@ -72,3 +81,42 @@ header p {
 .hamburger.show::before {
     content: "\00d7";
 }
+
+/* NAVIGATION */
+.larger-screen-navigation {
+    display: none;
+}
+
+.navigation {
+    display: none;
+    background-color: var(--button);
+    color: var(--main);
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    border-bottom: 2px solid var(--paragraph);
+}
+
+.navigation a:hover {
+    background-color: var(--button-hover);
+}
+
+.navigation li.current {
+    background-color: var(--button-hover);
+}
+
+
