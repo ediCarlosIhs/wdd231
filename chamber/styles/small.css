@@ -1,0 +1,61 @@
+:root {
+    --background: #f8f5f2;
+    --headline: #232323;
+    --paragraph: #222525;
+    --button: #078080;
+    --main: #fffffe;
+    --secondary: #f45d48;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+    background: var(--background);
+    color: var(--headline);
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    align-items: center;
+    padding: 10px 0 10px 10px;
+    column-gap: 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+header .chamber {
+    font-size: 1.5rem;
+}
+
+/* HAMBURGER */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border-width: 0;
+    padding: 0;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--headline);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 1.5rem;
+}
+
+.hamburger.show::before {
+    content: "\00d7";
+    font-size: 2rem;
+}
