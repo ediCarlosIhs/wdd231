@@ -17,7 +17,7 @@ header {
     background: var(--background);
     color: var(--headline);
     display: grid;
-    grid-template-columns: 50px auto 44px;
+    grid-template-columns: 50px auto 44px 44px;
     align-items: center;
     padding: 10px 0 10px 10px;
     column-gap: 8px;
@@ -29,6 +29,12 @@ header p {
 
 header .chamber {
     font-size: 1.5rem;
+}
+
+.page-controls {
+    display: flex;
+    justify-self: end;
+    column-gap: 8px;
 }
 
 /* HAMBURGER */
@@ -50,6 +56,18 @@ header .chamber {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+.dark-light {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dark-light::before {
+    content: "\25d0";
+    font-size: 1.5rem;
+}
+
 .hamburger::before {
     content: "\2630";
     font-size: 1.5rem;
@@ -57,5 +75,4 @@ header .chamber {
 
 .hamburger.show::before {
     content: "\00d7";
-    font-size: 2rem;
 }
