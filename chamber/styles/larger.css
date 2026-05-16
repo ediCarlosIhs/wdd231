@@ -49,4 +49,14 @@
         color: var(--headline);
         font-weight: 700;
     }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .chamber-information {
+        margin-left: 4rem;
+    }
 }
+
