@@ -150,9 +150,7 @@ h1 {
     background: var(--button);
 }
 
-.grid {}
-
-section {
+.grid section {
     background-color: #ddd;
     border: 1px solid #bbb;
     border-radius: 10px;
@@ -161,18 +159,62 @@ section {
     text-align: center;
 }
 
-section img {
+.grid section img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-section h3 {
+.grid section h3 {
+    color: var(--button);
     margin: .5rem 0;
 }
 
-section p {
+.grid section p {
     margin: .5rem 0;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #ddd;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: .5rem 0;
+    padding: 5px;
+    text-align: center;
+}
+
+.list h3 {
+    color: var(--button);
+    padding: .5rem;
+}
+
+.list p {
+    margin: .5rem;
+}
+
+.list * {
+    align-self: center;
+}
+
+.list a {
+    grid-column: 1 / 2;
+}
+
+.list p:last-child {
+    grid-column: 2 / 4;
+}
+
+.list img {
+    display: none;
+}
+
+section a {
+    color: var(--button);
+    text-decoration: none;
+    font-weight: 700;
 }
 
 
