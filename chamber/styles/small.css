@@ -150,6 +150,10 @@ h1 {
     background: var(--button);
 }
 
+#members {
+    min-height: 700px;
+}
+
 .grid section {
     background-color: #ddd;
     border: 1px solid #bbb;
@@ -160,10 +164,13 @@ h1 {
     margin: 0 auto 1rem;
 }
 
-.grid section img {
-    display: block;
+img {
     max-width: 100%;
     height: auto;
+}
+
+.grid section img {
+    display: block;
 }
 
 .grid section h2 {

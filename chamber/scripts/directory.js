@@ -30,14 +30,21 @@ async function getMembers() {
 
 const displayMembers = (members) => {
 
-    members.forEach((member) => {
+    members.forEach((member, index) => {
         
         const companyImage = document.createElement("img");
         companyImage.src = `./images/directory/${member.imagePath}`;
-        companyImage.setAttribute("loading", "lazy");
         companyImage.setAttribute("width", "300");
         companyImage.setAttribute("height", "200");
         companyImage.setAttribute("alt", `${member.name} Company Image`);
+
+        if (index === 0) {
+            companyImage.setAttribute("fetchpriority", "high");
+        }
+        else {
+            companyImage.setAttribute("loading", "lazy");
+        }
+
 
         const companyName = document.createElement("h2");
         companyName.textContent = member.name;
