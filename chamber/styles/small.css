@@ -241,6 +241,7 @@ footer h3 {
 
 footer p {
     margin: .5rem 0;
+    line-height: 1.6;
 }
 
 .social {
@@ -268,8 +269,4 @@ footer p {
 .social a:hover {
     color: var(--button);
     border: 1px solid var(--button);
-}
-
-footer p {
-    line-height: 1.6;
 }
