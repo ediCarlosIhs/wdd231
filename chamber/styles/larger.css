@@ -50,9 +50,30 @@
         font-weight: 700;
     }
 
+    /* MAIN */
+        /* DIRECTORY */
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 1rem;
+        }
+
+        .list section {
+            grid-template-columns: repeat(5, auto);
+        }
+
+        .list a {
+            grid-column: auto;
+        }
+
+        .list p:last-child {
+            grid-column: auto;
+        }
+
     footer {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .chamber-information {
