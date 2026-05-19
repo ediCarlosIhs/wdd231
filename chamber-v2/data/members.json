@@ -1,0 +1,63 @@
+{
+   "members": [
+        {
+            "name": "G4 Business Solution",
+            "address": "address 1",
+            "phone": "+55 15 1234-5678",
+            "url": "https://www.google.com",
+            "imagePath": "g4business.webp",
+            "level": 1
+        },
+        {
+            "name": "Leedsay",
+            "address": "address 2",
+            "phone": "+55 15 1234-5678",
+            "url": "https://www.google.com",
+            "imagePath": "leedsay.webp",
+            "level": 2
+        },
+        {
+            "name": "Blinda",
+            "address": "address 2",
+            "phone": "+55 15 1234-5678",
+            "url": "https://www.google.com",
+            "imagePath": "blinda.webp",
+            "level": 3
+        },
+        {
+            "name": "G.Wind",
+            "address": "address 2",
+            "phone": "+55 15 1234-5678",
+            "url": "https://www.google.com",
+            "imagePath": "gwind.webp",
+            "level": 1
+        },
+        {
+            "name": "TOTVS",
+            "address": "address 2",
+            "phone": "+55 15 1234-5678",
+            "url": "https://www.google.com",
+            "imagePath": "totvs.webp",
+            "level": 3
+        },
+        {
+            "name": "JP Sorocaba",
+            "address": "address 2",
+            "phone": "+55 15 1234-5678",
+            "url": "https://www.google.com",
+            "imagePath": "jvpan.webp",
+            "level": 2
+        },
+        {
+            "name": "3e Engenharia",
+            "address": "address 2",
+            "phone": "+55 15 1234-5678",
+            "url": "https://www.google.com",
+            "imagePath": "3eengenharia.webp",
+            "level": 1
+        }
+    ]
+
+}
+
+

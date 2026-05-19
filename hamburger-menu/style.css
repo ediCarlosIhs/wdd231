@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #262626;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border-width: 0;
+    padding: 0;
+}
+
+.dark-light {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.dark-light::before {
+    content: "\25d0";
+    font-size: 2.5rem;
+}
+
+.navbar {
+    min-height: 70px;
+    display: grid;
+    grid-template-columns: auto 44px 44px;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+.nav-link {
+    transition: .7s ease;
+}
+
+.nav-link:hover {
+    color: dodgerblue;
+}
+
+.hamburger {
+    /* display: none; */
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all .3s ease-in-out;
+    background-color: white;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: left 0.3s ease;
+}
+
+.nav-item {
+    margin: 16px 0;
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+@media only screen and (min-width: 38rem) {
+    .hamburger {
+        display: none;
+    }
+
+    .navbar {
+        grid-template-columns: 60px auto 44px;
+    }
+
+    .nav-menu {
+        left: 0;
+        position: relative;
+        top: auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-item {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100%;
+    }
+}
