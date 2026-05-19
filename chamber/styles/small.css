@@ -106,6 +106,7 @@ header p {
 
 .navigation.show .hamburger {
     align-self: end;
+    margin-right: 1rem;
 }
 
 .navigation.show .navigation-menu {
