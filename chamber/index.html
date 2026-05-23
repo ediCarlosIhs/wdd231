@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
 
@@ -60,18 +61,52 @@
         <section class="hero">
             <picture>
                 <source media="(min-width: 38rem)" srcset="images/bandeiras.webp">
-                <img src="images/bandeiras.webp" alt="Bandeiras entrance image">
+                <img src="images/bandeiras-mobile.webp" alt="Bandeiras entrance image">
             </picture>
             <a href="join.html" target="_blank">Join Us</a>
         </section>
 
-        <section class="events">
+        <h1>Home</h1>
+
+        <section class="events-weather">
+
+            <div class="events">
+                <h2>Events</h2>
+
+                <p>Monday 6:00pm : Jacob fireside on the Allegory of the Olive Tree</p>
+                <p>Tuesday 10:00am : Coronation of Kink Noah</p>
+                <p>Wednesday 5:00pm : Archery contest for youth ages 16-18</p>
+
+            </div>
+
+            <div class="weather">
+                <h2>Current Weather</h2>
+                <img id="weather-icon" src="https://openweathermap.org/img/w/04n.png" alt="overcast clouds" width="50"
+                    height="50">
+                <div id="weather-report">
+                    <p><span class="highlight">75º</span> F</p>
+                    <p>Party Cloudy</p>
+                    <p>High: 85º</p>
+                    <p>Low: 52º</p>
+                    <p>Humidity: 34%</p>
+                    <p>Sunrise: 7:30am</p>
+                    <p>Sunset: 9:59pm</p>
+                </div>
+
+            </div>
+
+            <div class="forecast">
+                <h2>Weather Forecast</h2>
+                <div id="forecast">
+                    <p>Today: <span class="highlight">16.17ºC</span></p>
+                    <p>Saturday: <span class="highlight">20ºC</span></p>
+                    <p>Sunday: <span class="highlight">22ºC</span></p>
+                </div>
+            </div>
 
         </section>
 
-        <section class="weather">
 
-        </section>
 
         <section class="company-spotlights">
 

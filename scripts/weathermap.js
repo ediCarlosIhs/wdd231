@@ -26,7 +26,7 @@ async function apiFetch() {
             throw Error(await response.text());
         }
     } catch (error) {
-        console.error("Error fetching members", error);
+        console.error("Error fetching weather", error);
     }
 }
 
