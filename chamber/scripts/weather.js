@@ -62,13 +62,9 @@ function displayForecast(forecastData) {
 
     forecastSection.innerHTML = "";
 
-    console.log(forecastData);
+    // console.log(forecastData);
 
-     // updating today forecast section
-     const mainTemp = document.querySelector("#main-temp");
-     const mainTempSpan = document.querySelector("#main-temp span");
-
-     todayForecast.innerHTML = `${mainTempSpan.textContent}&deg;C`;
+    const mainTempSpan = document.querySelector("#main-temp span");
 
      const today = new Date();
      const tomorrow = new Date();
@@ -79,12 +75,16 @@ function displayForecast(forecastData) {
 
     //  console.log(tomorrowObject);
 
+    const todayP = document.createElement("p");
+    todayP.innerHTML = `Today: <span class="highlight">${mainTempSpan.textContent}&deg;C</span>`;
+
      const tomorrowP = document.createElement("p");
      tomorrowP.innerHTML = `${getWeekDay(tomorrow.getDay())}: <span class="highlight">${getDateObject(forecastData.list, tomorrow)}&deg;C</span>`;
 
      const dayAfterTomorrowP = document.createElement("p");
      dayAfterTomorrowP.innerHTML = `${getWeekDay(dayAfterTomorrow.getDay())}: <span class="highlight">${getDateObject(forecastData.list, dayAfterTomorrow)}&deg;C</span>`;
 
+     forecastSection.appendChild(todayP);
      forecastSection.appendChild(tomorrowP);
      forecastSection.appendChild(dayAfterTomorrowP);
 
@@ -96,7 +96,6 @@ function displayWeatherReport(weatherData) {
 
     const mainTemp = document.createElement("p");
     mainTemp.setAttribute("id", "main-temp");
-    mainTemp.setAttribute("data-timestamp", weatherData.dt);
     mainTemp.innerHTML = `<span class="highlight">${weatherData.main.temp}</span>&deg; C`;
 
     const weatherDescription = document.createElement("p");

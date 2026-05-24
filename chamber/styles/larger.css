@@ -10,7 +10,7 @@
     }
 
     main {
-        max-width: 900px;
+        max-width: 1000px;
         margin: 0 auto;
     }
 
@@ -49,6 +49,28 @@
     }
 
     /* MAIN */
+
+        /* INDEX */
+
+        .events-weather {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            column-gap: .5rem;
+        }
+
+        .events {
+            grid-column: 1 / 2;
+        }
+
+        .weather {
+            grid-column: 2 / 3;
+        }
+
+        .forecast {
+            grid-column: 3 / 4;
+        }
+
+
         /* DIRECTORY */
 
         .grid {
