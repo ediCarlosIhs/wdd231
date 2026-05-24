@@ -41,6 +41,10 @@ function displayMembers(members) {
 
         const companyImg = document.createElement("img");
         companyImg.setAttribute("src", `./images/directory/${members[index].imagePath}`);
+        companyImg.setAttribute("loading", "lazy");
+        companyImg.setAttribute("width", "55");
+        companyImg.setAttribute("heigh", "38");
+        companyImg.setAttribute("alt",`${members[index].name} Company Image`)
 
         const companyInformation = document.createElement("div");
         companyInformation.classList.add("company-card--information");
@@ -59,8 +63,9 @@ function displayMembers(members) {
         phoneP.append(members[index].phone);
 
         const website = document.createElement('a');
-        website.setAttribute("url", members[index].url);
+        website.setAttribute("href", members[index].url);
         website.setAttribute("target", "_blank");
+        website.textContent = "Website";
 
         const memberLevel = document.createElement("p");
         memberLevel.textContent = `Member Level is ${members[index].level}`;
