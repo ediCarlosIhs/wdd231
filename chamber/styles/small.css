@@ -129,8 +129,12 @@ header p {
 }
 
 .navigation a:hover {
-    background-color: var(--button-hover);
-    color: var(--background);
+    color: var(--button);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--button);
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
 }
 
 .navigation li.current {
