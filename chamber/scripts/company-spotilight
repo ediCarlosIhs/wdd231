@@ -1,0 +1,77 @@
+const url = "./data/members.json";
+const spotlights = document.querySelector("#spotlights");
+
+async function getMembers() {
+
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        
+        const members = data.members.filter(member => member.level === 2 || member.level === 3);
+
+        // console.log(members);
+        displayMembers(members);
+    } catch (error) {
+        console.error("Error fetching members", error);
+    }
+
+}
+
+
+function displayMembers(members) {
+
+    spotlights.innerHTML = "";
+    const usedIndex = [];
+    
+    for (let i = 0; i <= 2; i++) {
+        
+        let index;
+        
+        do {
+            index = Math.floor(Math.random() * members.length);
+        } while (usedIndex.includes(index));
+
+        usedIndex.push(index);
+        
+        const companyCard = document.createElement("div");
+        companyCard.classList.add("company-card");
+
+        const companyImg = document.createElement("img");
+        companyImg.setAttribute("src", `./images/directory/${members[index].imagePath}`);
+
+        const companyName = document.createElement("h2");
+        companyName.textContent = members[index].name;
+
+        const span = document.createElement("span");
+        span.classList.add("highlight");
+
+        span.textContent = "Email: ";
+        const addressP = document.createElement("p");
+        addressP.appendChild(span);
+        addressP.append(members[index].address);
+
+        span.textContent = "Phone: ";
+        const phoneP = document.createElement("p");
+        phoneP.appendChild(span);
+        phoneP.append(members[index].phone);
+
+        const website = document.createElement('a');
+        website.setAttribute("url", members[index].url);
+        website.setAttribute("target", "_blank");
+
+        const memberLevel = document.createElement("p");
+        memberLevel.textContent = `Member Level is ${members[index].level}`;
+
+        companyCard.appendChild(companyImg);
+        companyCard.appendChild(companyName);
+        companyCard.appendChild(addressP);
+        companyCard.appendChild(phoneP);
+        companyCard.appendChild(website);
+        companyCard.appendChild(memberLevel);
+
+        spotlights.appendChild(companyCard);
+    }
+
+}
+
+getMembers();
