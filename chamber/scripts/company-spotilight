@@ -35,12 +35,15 @@ function displayMembers(members) {
         
         const companyCard = document.createElement("div");
         companyCard.classList.add("company-card");
+        
+        const companyName = document.createElement("h2");
+        companyName.textContent = members[index].name;
 
         const companyImg = document.createElement("img");
         companyImg.setAttribute("src", `./images/directory/${members[index].imagePath}`);
 
-        const companyName = document.createElement("h2");
-        companyName.textContent = members[index].name;
+        const companyInformation = document.createElement("div");
+        companyInformation.classList.add("company-card--information");
 
         const span = document.createElement("span");
         span.classList.add("highlight");
@@ -62,12 +65,14 @@ function displayMembers(members) {
         const memberLevel = document.createElement("p");
         memberLevel.textContent = `Member Level is ${members[index].level}`;
 
-        companyCard.appendChild(companyImg);
+        companyInformation.appendChild(addressP);
+        companyInformation.appendChild(phoneP);
+        companyInformation.appendChild(website);
+        companyInformation.appendChild(memberLevel);
+
         companyCard.appendChild(companyName);
-        companyCard.appendChild(addressP);
-        companyCard.appendChild(phoneP);
-        companyCard.appendChild(website);
-        companyCard.appendChild(memberLevel);
+        companyCard.appendChild(companyImg);
+        companyCard.appendChild(companyInformation);
 
         spotlights.appendChild(companyCard);
     }
