@@ -40,10 +40,10 @@ function displayMembers(members) {
         companyName.textContent = members[index].name;
 
         const companyImg = document.createElement("img");
-        companyImg.setAttribute("src", `./images/directory/${members[index].imagePath}`);
+        companyImg.setAttribute("src", `./images/spotlight/${members[index].imagePath}`);
         companyImg.setAttribute("loading", "lazy");
-        companyImg.setAttribute("width", "55");
-        companyImg.setAttribute("heigh", "38");
+        companyImg.setAttribute("width", "90");
+        companyImg.setAttribute("heigh", "auto");
         companyImg.setAttribute("alt",`${members[index].name} Company Image`)
 
         const companyInformation = document.createElement("div");
