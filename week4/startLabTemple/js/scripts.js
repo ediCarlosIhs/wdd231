@@ -26,8 +26,19 @@ function displayItems(data) {
         photo.src = `${url}${x.path}`;
         photo.alt = x.name;
         
+        // Add an event listener to each division on the page
+        photo.addEventListener('click', () => {
+            showStuff(x);
+        })
+
         showHere.appendChild(photo);
     });
 }
 
 displayItems(temples);
+
+function showStuff(x) {
+    mytitle.innerHTML = x.name;
+    myinfo.innerHTML = `Dedicated ${x.dedicated} by ${x.person} as temple number ${x.number}`;
+    mydialog.showModal();
+}

@@ -212,6 +212,13 @@ export const temples = [
         "dedicated": "October, 1984",
         "person": "Gordon B. Hinckley",
         "path": "dallas-texas/400x250/dallas-temple-lds-1048888-wallpaper.jpg"
+    },
+    {
+        "number": "111",
+        "name": "Campinas Brazil Temple",
+        "dedicated": "May, 2002",
+        "person": "Gordon B. Hinckley",
+        "path": "campinas-brazil/320x200/campinas-brazil-temple-1030031-wallpaper.jpg"
     }
 ]
 
