@@ -501,12 +501,14 @@ h1 {
 .memberModal-header {
     display: grid;
     grid-template-columns: auto 44px;
+    align-items: center;
     border-bottom: 1px dashed #555;
 }
 
 .memberModal-header h4 {
     color: var(--button);
     font-size: 1.2rem;
+    margin: 0;
 }
 
 .memberModal-header button {
@@ -514,7 +516,9 @@ h1 {
     font-size: 1.5rem;
     border-radius: 8px;
     border: 1px solid #555;
-    padding: 0;
+    padding: .3rem;
+    box-shadow: 0 0 10px #aaa;
+    background-color: #ccc;
 }
 
 #memberModal-details p {
