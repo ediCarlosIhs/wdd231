@@ -1,0 +1,226 @@
+:root {
+    --background: #f8f5f2;
+    --background-opacity: #f8f5f280;
+    --headline: #232323;
+    --paragraph: #222525;
+    --button: #026767;
+    --button-hover: #005a5a;
+    --main: #fffffe;
+    --secondary: #f45d48;
+    --light-green: #a6ffba;
+
+    --color-mygrey-00: lab(100% 0 0);
+    --color-mygrey-05: lab(95% 0 0);
+    --color-mygrey-10: lab(90% 0 0);
+    --color-mygrey-20: lab(80% 0 0);
+    --color-mygrey-30: lab(70% 0 0);
+    --color-mygrey-40: lab(60% 0 0);
+    --color-mygrey-50: lab(50% 0 0);
+    --color-mygrey-60: lab(40% 0 0);
+    --color-mygrey-70: lab(30% 0 0);
+    --color-mygrey-80: lab(20% 0 0);
+    --color-mygrey-90: lab(10% 0 0);
+    --color-mygrey-100: lab(0% 0 0);
+    /* https://www.happyhues.co/palettes/8 */
+}
+
+
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+    background: var(--background);
+    color: var(--headline);
+    display: grid;
+    grid-template-columns: 50px auto 44px 44px;
+    align-items: center;
+    padding: 10px;
+    column-gap: 8px;
+}
+
+.chamber {
+    font-size: 1.5rem;
+    display: block;
+}
+
+header p {
+    margin: 0;
+    font-size: .8rem;
+}
+
+.page-controls {
+    display: flex;
+    justify-self: end;
+    column-gap: 8px;
+}
+
+/* HAMBURGER */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border-width: 0;
+    padding: 0;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--headline);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.dark-light {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dark-light::before {
+    content: "\25d0";
+    font-size: 2.5rem;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2.5rem;
+}
+
+.hamburger.show::before {
+    content: "\00d7";
+}
+
+/* NAVIGATION */
+.navigation {
+    display: block;
+}
+
+.navigation-menu {
+    display: none;
+}
+
+.navigation.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background: var(--main);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.navigation.show .hamburger {
+    align-self: end;
+    margin-right: 1rem;
+}
+
+.navigation.show .navigation-menu {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    border-bottom: 2px solid var(--paragraph);
+}
+
+.navigation a:hover {
+    color: var(--button);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--button);
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+
+.navigation li.current {
+    color: var(--button);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--button);
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+
+
+/* MAIN */
+
+main {
+    padding: 0 10px;
+}
+
+h1 {
+    margin: .5rem 0;
+    color: var(--button);
+}
+
+#results {
+    border: 2px solid var(--button);
+    border-radius: 8px;
+    background-color: var(--light-green);
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: var(--headline);
+    padding: 1rem 10px;
+    color: var(--background);
+}
+
+footer h3 {
+    margin: 0 0 .5rem;
+}
+
+footer p {
+    margin: .5rem 0;
+    line-height: 1.6;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--background);
+    border-radius: 22px;
+    color: var(--background);
+}
+
+.social svg {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    color: var(--button);
+    border: 1px solid var(--button);
+}

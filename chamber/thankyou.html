@@ -16,14 +16,16 @@
     <meta property="og:image" content="https://edicarlosihs.github.io/wdd231/images/image-meta-tag.webp">
     <meta property="og:url" content="https://edicarlosihs.github.io/wdd231/">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+    </noscript>
 
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/thankyou-small.css" media="all">
+    <link rel="stylesheet" href="styles/thankyou-larger.css" media="min-width: 38rem">
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/thankyou.js" defer></script>
