@@ -489,6 +489,14 @@ h1 {
     color: var(--background);
 }
 
+.membership-level button {
+    border: none;
+    padding: .5rem;
+    border-radius: 8px;
+    color: #025a5a;
+    font-weight: 700;
+}
+
 #memberModal {
     position: relative;
     border: 3px solid var(--button);
