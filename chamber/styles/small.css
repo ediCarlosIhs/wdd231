@@ -6,7 +6,7 @@
     --button: #026767;
     --button-hover: #005a5a;
     --main: #fffffe;
-    --secondary: #f45d48;
+    --secondary: #c84c3b;
     --light-green: #a6ffba;
 
     --color-mygrey-00: lab(100% 0 0);
@@ -401,7 +401,7 @@ h1 {
 
 .membership-form label {
     font-weight: 700;
-    color: var(--button);
+    color: #026363;
 }
 
 .membership-form input[type="text"],
