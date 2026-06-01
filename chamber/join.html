@@ -26,8 +26,7 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/company-spotilight" defer></script>
+    <script src="scripts/join.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
 
@@ -69,48 +68,48 @@
 
                 <form action="thankyou.html" method="GET" class="form">
 
-                    <div class="form-input">
+                    <div class="field-box">
                         <label for="firstName">First Name</label>
                         <input id="firstName" type="text" name="first" required autocomplete="given-name"
                             title="Your First Name">
                     </div>
 
-                    <div class="form-input">
+                    <div class="field-box">
                         <label for="lastName">Last Name</label>
                         <input id="lastName" type="text" name="last" required autocomplete="family-name"
                             title="Your Last Name">
                     </div>
 
-                    <div class="form-input">
+                    <div class="field-box">
                         <label for="title">Organization Title</label>
                         <input id="title" type="text" name="organizationTitle" autocomplete="organization-title"
                             title="Your Organization Title" pattern="[a-zA-Z -]{7,}">
                     </div>
 
-                    <div class="form-input">
+                    <div class="field-box">
                         <label for="email">Email</label>
                         <input id="email" type="email" name="email" required autocomplete="email" title="Your Email"
                             placeholder="jane.doe@example.com">
                     </div>
 
-                    <div class="form-input">
+                    <div class="field-box">
                         <label for="phone">Cell Phone</label>
                         <input id="phone" type="tel" name="phone" required autocomplete="tel"
                             title="A phone Number with dashes" placeholder="987-666-1234">
                     </div>
 
-                    <div class="form-input">
+                    <div class="field-box">
                         <label for="organization">Organization</label>
                         <input id="organization" type="text" name="organization" required title="Your Organization Name"
                             autocomplete="organization">
                     </div>
 
-                    <div class="form-input">
+                    <div class="field-box">
                         <label for="description">Business Description</label>
                         <textarea name="description" id="description"></textarea>
                     </div>
 
-                    <div class="form-input">
+                    <div class="field-box">
                         <h3>Membership Level</h3>
                         <label>
                             <input type="radio" name="level" value="np">
@@ -135,10 +134,54 @@
 
                     <input type="hidden" name="hiddendate" id="today" value="">
 
-                    <input type="submit" value="Apply for Membership">
+                    <div class="field-submit">
+                        <input type="submit" value="Apply for Membership">
+                    </div>
 
                 </form>
             </section>
+
+            <section class="membership-level">
+
+                <h2>Membership Levels</h2>
+
+                <aside>
+                    <h3>Non Profit Membership Level</h3>
+                    <button id="btn-np">Learn More</button>
+                </aside>
+
+                <aside>
+                    <h3>Bronze Membership Level</h3>
+                    <button id="btn-bronze">Learn More</button>
+                </aside>
+
+                <aside>
+                    <h3>Silver Membership Level</h3>
+                    <button id="btn-silver">Learn More</button>
+                </aside>
+
+                <aside>
+                    <h3>Gold Membership Level</h3>
+                    <button id="btn-gold">Learn More</button>
+                </aside>
+
+                <dialog id="memberModal">
+                    <div class="memberModal-header">
+                        <h4 id="memberModal-title"></h4>
+                        <button id="closeModal">X</button>
+                    </div>
+                    <div id="memberModal-details">
+                        <p>Benefits include:</p>
+                        <ul>
+                            <li>You'll get a nice plaque with the mayor's stamp on it</li>
+                            <li>You get to ride on a float Saint Patty's Day</li>
+                        </ul>
+                        <p>COST: Free</p>
+                    </div>
+                </dialog>
+
+            </section>
+
         </div>
 
 

@@ -365,7 +365,136 @@ h1 {
     font-weight: 700;
 }
 
+/* JOIN */
 
+.membership-form h2, .membership-form h3 {
+    color: var(--secondary);
+    font-size: 1.2rem;
+}
+
+.membership-form h3 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: .5rem;
+    margin: 1rem 0 .2rem 0;
+}
+
+.membership-form .field-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: .2rem;
+    margin-bottom: .5rem;
+}
+
+.membership-form label {
+    font-weight: 700;
+    color: var(--button);
+}
+
+.membership-form input[type="text"],
+.membership-form input[type="tel"],
+.membership-form input[type="date"],
+.membership-form input[type="email"],
+.membership-form textarea {
+    padding: .5rem;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 1rem;
+    border-left-width: 5px;
+    max-width: 300px
+}
+
+.membership-form textarea {
+    overflow: auto;
+}
+
+.membership-form input:focus, .membership-form textarea:focus {
+    border: 1px solid var(--button);
+    border-left-width: 5px;
+    outline: none;
+}
+
+.membership-form input:required {
+    border-left-color: #d70000;
+}
+
+.membership-form input:required:valid {
+    border-left-color: green;
+}
+
+.membership-form .field-submit {
+    text-align: center;
+}
+
+.membership-form input[type="submit"] {
+    /* border: 1px solid #000; */
+    border: none;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    background-color: var(--button);
+    padding: 1rem;
+    color: var(--main);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.membership-level h2 {
+    color: var(--secondary);
+    font-size: 1.2rem;
+}
+
+.membership-level aside {
+    background-color: var(--button);
+    padding: .8rem;
+    border-radius: 5px 20px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.membership-level aside h3 {
+    color: var(--background);
+}
+
+#memberModal {
+    position: relative;
+    border: 3px solid var(--button);
+    border-radius: 10px;
+    padding: .5rem;
+    background-color: #eee;
+    box-shadow: 0 0 15px #777;
+    max-width: 90%;
+}
+
+.memberModal-header {
+    display: grid;
+    grid-template-columns: auto 44px;
+    border-bottom: 1px dashed #555;
+}
+
+.memberModal-header h4 {
+    color: var(--button);
+    font-size: 1.2rem;
+}
+
+.memberModal-header button {
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #555;
+    padding: 0;
+}
+
+#memberModal-details p {
+    font-weight: 700;
+}
+
+#memberModal-details li {
+    line-height: 1.6rem;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.65);
+}
 
 /* FOOTER */
 
