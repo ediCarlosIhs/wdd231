@@ -7,6 +7,7 @@
     --button-hover: #005a5a;
     --main: #fffffe;
     --secondary: #f45d48;
+    --light-green: #a6ffba;
 
     --color-mygrey-00: lab(100% 0 0);
     --color-mygrey-05: lab(95% 0 0);
@@ -548,6 +549,13 @@ h1 {
     
 }
 
+#results {
+    border: 2px solid var(--button);
+    border-radius: 8px;
+    background-color: var(--light-green);
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
 
 
 /* FOOTER */

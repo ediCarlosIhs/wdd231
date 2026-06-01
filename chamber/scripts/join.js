@@ -4,6 +4,8 @@ const closeModal = document.querySelector("#closeModal");
 const memberModalTitle = document.querySelector("#memberModal-title");
 const memberModalDetails = document.querySelector("#memberModal-details")
 
+document.querySelector("#today").value = new Date();
+
 closeModal.addEventListener('click', () => {
     memberModal.close();
 });
