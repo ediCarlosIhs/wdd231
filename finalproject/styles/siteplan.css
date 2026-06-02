@@ -1,0 +1,159 @@
+:root {
+
+    --very-dark-indigo: #0f0e17;
+    --off-white: #fffffe;
+    --cool-gray: #a7a9be;
+    --vivid-orange: #ff8906;
+    --coral-red: #f25f4c;
+    --vibrant-magenta: #e53170;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--very-dark-indigo);
+    color: var(--vivid-orange);
+}
+
+header {
+    background-color: var(--very-dark-indigo);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 8px solid var(--vivid-orange);
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    color: var(--coral-red);
+}
+
+header p {
+    color: var(--coral-red);
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+main {
+    background-color: var(--off-white);
+    padding: 1rem;
+}
+
+section {
+    background-color: var(--very-dark-indigo);
+    border-radius: 8px;
+    border-left: 8px solid var(--coral-red);
+    color: var(--off-white);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+section:last-child {
+    margin: 0;
+}
+
+section h2, section h3 {
+    color: var(--coral-red);
+    margin: 0 0 1rem;
+    text-align: center;
+}
+
+section .siteName {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--coral-red);
+}
+
+section p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+section p span {
+    font-weight: 700;
+    color: var(--coral-red);
+}
+
+section li {
+    line-height: 1.4;
+    margin-bottom: .5rem;
+}
+
+section li:last-child {
+    margin: 0;
+}
+
+.color-box {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: 1px solid var(--coral-red);
+    background-color: var(--very-dark-indigo);
+}
+
+
+.very-dark {
+    background-color: var(--very-dark-indigo);
+}
+
+.very-dark p {
+    color: var(--off-white);
+}
+
+.off-white {
+    background-color: var(--off-white);
+    border-left: 8px solid var(--coral-red);
+    color: var(--very-dark-indigo);
+}
+
+.coral-red {
+    background-color: var(--coral-red);
+    color: var(--very-dark-indigo);
+}
+
+.roboto {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+figure:last-child {
+    margin-top: 1rem;
+}
+
+section img {
+    max-width: 100%;
+}
+
+section figure {
+    margin: 0;
+    text-align: center;
+}
+
+section figcaption {
+    text-align: center;
+    font-weight: 700;
+    color: var(--charcoal-blue);
+}
+
+footer {
+    border-top: 8px solid var(--coral-red);
+    background-color: var(--very-dark-indigo);
+    padding: 1rem;
+    text-align: center;
+    color: var(--off-white);
+}
+
+footer p:first-child {
+    margin-bottom: .5rem;
+}
+
+footer p {
+    color: var(--off-white);
+    margin: 0;
+}
