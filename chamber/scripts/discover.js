@@ -22,7 +22,7 @@ function displayItems(places) {
 
         // create the address element
         const theaddress = document.createElement('address');
-        theaddress.innerText = place.address;
+        theaddress.innerHTML = `<span>Location</span>: ${place.address}`;
         thecard.appendChild(theaddress);
 
         // create the description element
@@ -33,7 +33,7 @@ function displayItems(places) {
 
         const thePrice = document.createElement('p');
         thePrice.classList.add('cost');
-        thePrice.innerText = `COST: ${place.cost}`
+        thePrice.innerHTML = `<span>Cost</span>: ${place.cost}`
         thecard.appendChild(thePrice);
 
         const learnMore = document.createElement('button');

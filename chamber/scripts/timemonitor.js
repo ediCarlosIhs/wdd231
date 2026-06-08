@@ -1,4 +1,10 @@
 const timeMonitor = document.querySelector("#timeMonitor");
+const closeMessage = document.querySelector("#closeMessage");
+const welcomeMessage = document.querySelector(".welcome-message");
+
+closeMessage.addEventListener('click', () => {
+    welcomeMessage.classList.add('hide');
+})
 
 // milliseconds to days constant = 1000 ms/s * 60 s/m * 60 m/h * 24 h/day
 const msToDays = 86400000;
@@ -13,7 +19,7 @@ if (visitTime == null) {
     let difference = (Date.now() - visitTime) / msToDays;
     // console.log(difference);
 
-    // difference = 1;
+    difference = 1;
 
     if (difference < 1) {
         timeMonitor.innerHTML = `Back so soon! Awesome!`

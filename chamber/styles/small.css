@@ -566,9 +566,46 @@ h1 {
 }
 
 /* DISCOVER PAGE */
+
+.welcome-message {
+    border: 1px solid var(--button);
+    padding: .5rem;
+    border-radius: 8px;
+    background-color: var(--light-green);
+}
+
+.welcome-message.hide {
+    display: none;
+}
+
+.messageHeader {
+    display: grid;
+    grid-template-columns: auto 44px;
+    
+}
+
+.messageHeader h2 {
+    margin: 0;
+    color: var(--button);
+}
+
+#timeMonitor {
+    font-weight: 700;
+    color: var(--button);
+}
+
+.messageHeader button {
+    border: none;
+    background-color: transparent;
+    color: var(--button);
+    font-weight: 700;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
 #allplaces div {
-    border: 1px solid #999;
-    background-color: #eee;
+    border: 1px solid var(--button);
+    background-color: var(--color-mygrey-10);
     border-radius: 8px;
     overflow: hidden;
     max-width: 320px;
@@ -590,6 +627,7 @@ h1 {
     margin: 1rem 0;
     grid-area: name;
     text-align: center;
+    color: var(--headline);
 }
 
 #allplaces div img {
@@ -597,9 +635,15 @@ h1 {
     grid-area: photograph;
 }
 
+#allplaces div p span,
+#allplaces div address span {
+    font-weight: 700;
+}
+
 #allplaces div p.description {
     margin: 1rem 10px;
     grid-area: description;
+    line-height: 1.6rem;
 }
 
 #allplaces div p.cost {
