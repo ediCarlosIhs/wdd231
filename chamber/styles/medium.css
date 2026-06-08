@@ -123,6 +123,12 @@
             width: 300px;
         }
 
+        #allplaces div img:hover {
+            box-shadow: 0 0 10px #333;
+            /* border: 1px solid rgba(0, 0, 0, 0.3); */
+            rotate: -5deg;
+        }
+
     footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
