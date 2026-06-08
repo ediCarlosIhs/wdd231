@@ -108,6 +108,9 @@
         /* DISCOVER PAGE */
         #allplaces div {
 
+            max-width: none;
+            margin: 1rem auto;
+
             grid-template-areas: 
             "name name"
             "photograph description"

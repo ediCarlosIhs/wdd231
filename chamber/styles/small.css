@@ -568,10 +568,11 @@ h1 {
 /* DISCOVER PAGE */
 #allplaces div {
     border: 1px solid #999;
-    margin: 1rem 0;
     background-color: #eee;
     border-radius: 8px;
     overflow: hidden;
+    max-width: 320px;
+    margin: 1rem auto;
     padding: 10px;
 
     display: grid;
