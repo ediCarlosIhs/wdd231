@@ -5,7 +5,7 @@ const showHere = document.querySelector('#allplaces');
 
 function displayItems(places) {
 
-    places.forEach(place => {
+    places.forEach((place, index) => {
         // create the card element
         const thecard = document.createElement('div');
 
@@ -13,6 +13,16 @@ function displayItems(places) {
         const thephoto = document.createElement('img');
         thephoto.src = `images/discover/${place.photoUrl}`;
         thephoto.alt = place.name;
+        thephoto.width = "300";
+        thephoto.height = "200";
+
+        if (index == 0) {
+            thephoto.setAttribute("fetchpriority", "high");
+        }
+        else {
+            thephoto.setAttribute("loading", "lazy");
+        }
+
         thecard.appendChild(thephoto);
 
         // create the title element

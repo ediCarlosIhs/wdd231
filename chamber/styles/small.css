@@ -603,6 +603,10 @@ h1 {
     cursor: pointer;
 }
 
+#allplaces {
+    min-height: 6700px;
+}
+
 #allplaces div {
     border: 1px solid var(--button);
     background-color: var(--color-mygrey-10);
