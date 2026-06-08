@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Us | Votorantim Chamber of Commerce</title>
+    <title>Discover | Votorantim Chamber of Commerce</title>
     <meta name="description" content="This page is about the resources you will enconter in the chamber of Commerce.">
     <meta name="author" content="Edi Carlos da Silva">
 
@@ -12,7 +12,7 @@
 
     <meta property="og:title" content="Homepage - Votorantim Chamber of Commerce">
     <meta property="og:description"
-        content="Welcome to Votorantim chamber of commerce website. See the business and services we supply.">
+        content="Discover Votorantim chamber of commerce website. See the business and services we supply.">
     <meta property="og:image" content="https://edicarlosihs.github.io/wdd231/images/image-meta-tag.webp">
     <meta property="og:url" content="https://edicarlosihs.github.io/wdd231/">
 
@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/join.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
     <script src="scripts/date.js" defer></script>
 </head>
 
@@ -50,8 +50,8 @@
             <ul class="navigation-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li class="current"><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li class="current"><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
 
@@ -59,133 +59,9 @@
 
     <main>
 
-        <h1>Join Us</h1>
+        <h1>Discover</h1>
 
-        <div class="membershipSections">
-
-            <section class="membership-form">
-
-                <h2>Membership Application Form</h2>
-
-                <form action="thankyou.html" method="GET" class="form">
-
-                    <div class="field-box">
-                        <label for="firstName">First Name</label>
-                        <input id="firstName" type="text" name="first" required autocomplete="given-name"
-                            title="Your First Name">
-                    </div>
-
-                    <div class="field-box">
-                        <label for="lastName">Last Name</label>
-                        <input id="lastName" type="text" name="last" required autocomplete="family-name"
-                            title="Your Last Name">
-                    </div>
-
-                    <div class="field-box">
-                        <label for="title">Organization Title</label>
-                        <input id="title" type="text" name="organizationTitle" autocomplete="organization-title"
-                            title="Your Organization Title" pattern="[a-zA-Z -]{7,}">
-                    </div>
-
-                    <div class="field-box">
-                        <label for="email">Email</label>
-                        <input id="email" type="email" name="email" required autocomplete="email" title="Your Email"
-                            placeholder="jane.doe@example.com">
-                    </div>
-
-                    <div class="field-box">
-                        <label for="phone">Cell Phone</label>
-                        <input id="phone" type="tel" name="phone" required autocomplete="tel"
-                            title="A phone Number with dashes" placeholder="987-666-1234">
-                    </div>
-
-                    <div class="field-box">
-                        <label for="organization">Organization</label>
-                        <input id="organization" type="text" name="organization" required title="Your Organization Name"
-                            autocomplete="organization">
-                    </div>
-
-                    <div class="field-box">
-                        <label for="description">Business Description</label>
-                        <textarea name="description" id="description"
-                            title="Write more descriptions of your company"></textarea>
-                    </div>
-
-                    <div class="field-box">
-                        <h3>Membership Level</h3>
-                        <label>
-                            <input type="radio" name="level" value="np">
-                            Non Profit Membership
-                        </label>
-
-                        <label>
-                            <input type="radio" name="level" value="bronze" checked>
-                            Bronze Membership
-                        </label>
-
-                        <label>
-                            <input type="radio" name="level" value="silver">
-                            Silver Membership
-                        </label>
-
-                        <label>
-                            <input type="radio" name="level" value="gold">
-                            Gold Membership
-                        </label>
-                    </div>
-
-                    <input type="hidden" name="hiddendate" id="today" value="">
-
-                    <div class="field-submit">
-                        <input type="submit" value="Apply for Membership">
-                    </div>
-
-                </form>
-            </section>
-
-            <section class="membership-level">
-
-                <h2>Membership Levels</h2>
-
-                <aside>
-                    <h3>Non Profit Membership Level</h3>
-                    <button id="btn-np">Learn More</button>
-                </aside>
-
-                <aside>
-                    <h3>Bronze Membership Level</h3>
-                    <button id="btn-bronze">Learn More</button>
-                </aside>
-
-                <aside>
-                    <h3>Silver Membership Level</h3>
-                    <button id="btn-silver">Learn More</button>
-                </aside>
-
-                <aside>
-                    <h3>Gold Membership Level</h3>
-                    <button id="btn-gold">Learn More</button>
-                </aside>
-
-                <dialog id="memberModal">
-                    <div class="memberModal-header">
-                        <h4 id="memberModal-title"></h4>
-                        <button id="closeModal">X</button>
-                    </div>
-                    <div id="memberModal-details">
-                        <p>Benefits include:</p>
-                        <ul>
-                            <li>You'll get a nice plaque with the mayor's stamp on it</li>
-                            <li>You get to ride on a float Saint Patty's Day</li>
-                        </ul>
-                        <p>COST: Free</p>
-                    </div>
-                </dialog>
-
-            </section>
-
-        </div>
-
+        <section id="allplaces"></section>
 
 
     </main>

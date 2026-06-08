@@ -565,6 +565,61 @@ h1 {
     margin-bottom: 1rem;
 }
 
+/* DISCOVER PAGE */
+#allplaces div {
+    border: 1px solid #999;
+    margin: 1rem 0;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "description"
+    "cost"
+    "location"
+    "button";
+}
+
+#allplaces div h2 {
+    margin: 1rem 0;
+    grid-area: name;
+    text-align: center;
+}
+
+#allplaces div img {
+    width: 100%;
+    grid-area: photograph;
+}
+
+#allplaces div p.description {
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+#allplaces div p.cost {
+    margin: 1rem 10px;
+    grid-area: cost;
+}
+
+#allplaces div address {
+    margin: 1rem 10px;
+    grid-area: location;
+}
+
+#allplaces div button {
+    margin: 1rem 0;
+    background-color: var(--button);
+    color: var(--main);
+    border: none;
+    padding: 1rem;
+    border-radius: 30px;
+    grid-area: button;
+}
 
 /* FOOTER */
 
