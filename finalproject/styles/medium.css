@@ -1,0 +1,61 @@
+@media only screen and (min-width: 38rem) {
+
+    header, footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header {
+        padding: 10px;
+        width: 100%;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation-menu {
+        display: flex;
+        justify-content: end;
+    }
+
+    .navigation-menu a {
+        border-bottom: none;
+    }
+
+    .navigation.show {
+        display: none;
+    }
+
+
+    /* MAIN */
+
+    .personality {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .myName, .myDream {
+        margin: 0;
+        font-size: 4rem;
+    }
+
+    .social {
+        justify-content: space-evenly;
+    }
+
+}

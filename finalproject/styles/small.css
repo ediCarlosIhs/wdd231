@@ -1,0 +1,237 @@
+:root {
+    --very-dark-indigo: #0f0e17;
+    --off-white: #fffffe;
+    --cool-gray: #a7a9be;
+    /* --vivid-orange: #ff8906; */
+    --coral-red: #f25f4c;
+    /* --vibrant-magenta: #e53170; */
+
+    --color-mygrey-00: lab(100% 0 0);
+    --color-mygrey-05: lab(95% 0 0);
+    --color-mygrey-10: lab(90% 0 0);
+    --color-mygrey-20: lab(80% 0 0);
+    --color-mygrey-30: lab(70% 0 0);
+    --color-mygrey-40: lab(60% 0 0);
+    --color-mygrey-50: lab(50% 0 0);
+    --color-mygrey-60: lab(40% 0 0);
+    --color-mygrey-70: lab(30% 0 0);
+    --color-mygrey-80: lab(20% 0 0);
+    --color-mygrey-90: lab(10% 0 0);
+    --color-mygrey-100: lab(0% 0 0);
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-dark-indigo);
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    background: var(--very-dark-indigo);
+    color: var(--off-white);
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: center;
+    height: 68px;
+    padding: 10px;
+    column-gap: 8px;
+}
+
+header .link-logo {
+    text-align: center;
+}
+
+header img {
+    /* justify-self: center; */
+    width: 70px;
+    height: auto;
+}
+
+/* HAMBURGER */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border-width: 0;
+    padding: 0;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--coral-red);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.dark-light {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dark-light::before {
+    content: "\25d0";
+    font-size: 2.5rem;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2.5rem;
+}
+
+.hamburger.show::before {
+    content: "\00d7";
+}
+
+/* NAVIGATION */
+.navigation {
+    display: block;
+    text-align: end;
+}
+
+.navigation-menu {
+    display: none;
+}
+
+.navigation.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 220px;
+    height: 100vh;
+    background: var(--very-dark-indigo);
+    box-shadow: 0 10px 10px var(--coral-red);
+    z-index: 999;
+}
+
+.navigation.show .hamburger {
+    align-self: end;
+    margin-right: 1rem;
+}
+
+.navigation.show .navigation-menu {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    color: var(--coral-red);
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    /* border-bottom: 2px solid var(--coral-red); */
+}
+
+.navigation a:hover {
+    color: var(--coral-red);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--coral-red);
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+
+.navigation li.current {
+    color: var(--coral-red);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--coral-red);
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+
+/* MAIN */
+
+main {
+    color: var(--coral-red);
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    flex-grow: 1;
+}
+
+main p {
+    text-align: center;
+}
+
+.personality {
+    margin-top: 3rem;
+}
+
+.myName {
+    font-size: 2.3rem;
+}
+
+.myDream {
+    font-size: 2rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--background);
+    border-radius: 22px;
+    color: var(--background);
+}
+
+.social svg {
+    width: 40px;
+    height: 40px;
+}
+
+.social a:hover {
+    color: var(--button);
+    border: 1px solid var(--button);
+}
+
+main .aboutme {
+    text-align: right;
+    margin-top: 3rem;
+}
+
+.aboutme a {
+    text-decoration: none;
+    border: 1px solid var(--coral-red);
+    padding: .5rem 1rem;
+    color: var(--coral-red);
+    font-size: 1.5rem;
+}
+
+
+
+footer {
+    padding: 1rem 10px;
+    color: var(--coral-red);
+    text-align: center;
+}
