@@ -4,6 +4,7 @@
     --cool-gray: #a7a9be;
     /* --vivid-orange: #ff8906; */
     --coral-red: #f25f4c;
+    --coral-red-contrast: #c24934;
     /* --vibrant-magenta: #e53170; */
 
     --color-mygrey-00: lab(100% 0 0);
@@ -26,7 +27,7 @@
 }
 
 body {
-    background-color: var(--very-dark-indigo);
+    background: var(--very-dark-indigo);
     display: flex;
     flex-direction: column;
 
@@ -159,9 +160,9 @@ header img {
     text-decoration-thickness: 2px;
 }
 
-/* MAIN */
+/* INDEX */
 
-main {
+main.index {
     color: var(--coral-red);
     position: relative;
     padding: 10px;
@@ -172,7 +173,11 @@ main {
     flex-grow: 1;
 }
 
-main p {
+h1 {
+    text-align: center;
+}
+
+main.index p {
     text-align: center;
 }
 
@@ -215,7 +220,7 @@ main p {
     border: 1px solid var(--button);
 }
 
-main .aboutme {
+main.index .aboutme {
     text-align: right;
     margin-top: 3rem;
 }
@@ -226,6 +231,44 @@ main .aboutme {
     padding: .5rem 1rem;
     color: var(--coral-red);
     font-size: 1.5rem;
+}
+
+/* PROJECTS */
+
+main.projects {
+    color: var(--coral-red);
+}
+
+.project-card {
+    display: grid;
+}
+
+.project-card {
+    background: var(--off-white);
+    max-width: 232px;
+    margin: 0 auto 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-card h2, .project-card p {
+    margin: .5rem 0;
+}
+
+.project-card p {
+    color: var(--very-dark-indigo);
+}
+
+.project-card button {
+    width: fit-content;
+    justify-self: center;
+    border: none;
+    padding: .5rem;
+    border-radius: 8px;
+    background: var(--coral-red-contrast);
+    color: var(--off-white);
 }
 
 

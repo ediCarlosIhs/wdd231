@@ -1,0 +1,116 @@
+{
+    "projects": [
+        {
+            "name": "CSS Architecture",
+            "description": "Development of a page using CSS with the BEM principle (block, Element and Modifier)",
+            "deploy": "https://edicarlosihs.github.io/arquitetura-css/",
+            "repository": "https://github.com/ediCarlosIhs/arquitetura-css",
+            "imagePath": "project1.webp"
+        },
+        {
+            "name": "Exploring DOM js",
+            "description": "Project to practice DOM manipulation (Document Object Model). HTML element creation. Add CSS class",
+            "deploy": "https://edicarlosIhs.github.io/explorando-DOM/",
+            "repository": "https://github.com/ediCarlosIhs/explorando-DOM",
+            "imagePath": "project2.webp"
+        },
+        {
+            "name": "Flexbox",
+            "description": "Using Styling with flexbox. Another alternative for positioning elements on the page.",
+            "deploy": "https://edicarlosihs.github.io/flexbox-2023/",
+            "repository": "https://github.com/ediCarlosIhs/flexbox-2023",
+            "imagePath": "project3.webp"
+        },
+        {
+            "name": "Flexbox",
+            "description": "Using Styling with flexbox. Another alternative for positioning elements on the page.",
+            "deploy": "https://edicarlosihs.github.io/flexbox-2023/",
+            "repository": "https://github.com/ediCarlosIhs/flexbox-2023",
+            "imagePath": "project3.webp"
+        },
+        {
+            "name": "HTML5 + CSS3",
+            "description": "Very interesting project that I developed using the new HTML 5 tags.",
+            "deploy": "https://edicarlosihs.github.io/html5-css3-i/",
+            "repository": "https://github.com/ediCarlosIhs/html5-css3-i",
+            "imagePath": "project4.webp"
+        },
+        {
+            "name": "Responsive Layout",
+            "description": "Use of media queries in CSS to make the page responsive. Following the principle of mobile first.",
+            "deploy": "https://edicarlosIhs.github.io/layout-responsivo/",
+            "repository": "https://github.com/ediCarlosIhs/layout-responsivo",
+            "imagePath": "project5.webp"
+        },
+        {
+            "name": "Organizer",
+            "description": "Used React to organize teams and collaborators.",
+            "deploy": "https://organo-react-lemon.vercel.app/",
+            "repository": "https://github.com/ediCarlosIhs/organoReact",
+            "imagePath": "project6.webp"
+        },
+        {
+            "name": "React Router",
+            "description": "Deepening the knowledge of Routes in React",
+            "deploy": "https://react-router-javascript.vercel.app/",
+            "repository": "https://github.com/ediCarlosSilva/React-Router-Javascript",
+            "imagePath": "project7.webp"
+        },
+        {
+            "name": "Styled-components",
+            "description": "Project to use `Styled-Components` in a project with React.",
+            "deploy": "https://styled-components-black.vercel.app/",
+            "repository": "https://github.com/ediCarlosIhs/styled-components",
+            "imagePath": "project8.webp"
+        },
+        {
+            "name": "Blog with React",
+            "description": "In this project, React is used to consume REST API and render blog posts and comments.",
+            "deploy": "https://edicarlossilva.github.io/blogWithRest/",
+            "repository": "https://github.com/ediCarlosSilva/blogWithRest",
+            "imagePath": "project9.webp"
+        },
+        {
+            "name": "React + styled-components",
+            "description": "Technical test to be a front-end volunteer.",
+            "deploy": "https://desafio-lacrei-rho.vercel.app/",
+            "repository": "https://github.com/ediCarlosSilva/desafio-lacrei",
+            "imagePath": "project10.webp"
+        },
+        {
+            "name": "Demography and Weather",
+            "description": "A page that shows informations about the country like demography and weather.",
+            "deploy": "https://edicarlosihs.github.io/wdd131/place",
+            "repository": "https://github.com/ediCarlosIhs/wdd131/",
+            "imagePath": "project11.webp"
+        },
+        {
+            "name": "Positive Messages",
+            "description": "A webpage project to show positive quotes for the user.",
+            "deploy": "https://edicarlosihs.github.io/wdd131/project/",
+            "repository": "https://github.com/ediCarlosIhs/wdd131/",
+            "imagePath": "project12.webp"
+        },
+        {
+            "name": "Votorantim Chamber of Commerce",
+            "description": "This page project uses many tecnologies, like API, respnsive menu, best practices with forms, javascript",
+            "deploy": "https://edicarlosihs.github.io/wdd231/chamber/",
+            "repository": "https://github.com/ediCarlosIhs/wdd131/",
+            "imagePath": "project13.webp"
+        },
+        {
+            "name": "About me project",
+            "description": "This page is an about me page. It is a task on BYU Pathway Software Development course.",
+            "deploy": "https://edicarlosihs.github.io/wdd231/",
+            "repository": "https://github.com/ediCarlosIhs/wdd231/",
+            "imagePath": "project14.webp"
+        },
+        {
+            "name": "Bootstrap project",
+            "description": "This page is my portfolio done with boostrap.",
+            "deploy": "https://edicarlosihs.github.io/bootstrap/",
+            "repository": "https://github.com/ediCarlosIhs/bootstrap",
+            "imagePath": "project15.webp"
+        }
+    ]
+}
