@@ -40,7 +40,7 @@
     }
 
 
-    /* MAIN */
+    /* INDEX */
 
     .personality {
         margin: 0;
@@ -56,6 +56,12 @@
 
     .social {
         justify-content: space-evenly;
+    }
+
+    /* PROJECTS */
+
+    #projects {
+        grid-template-columns: 1fr 1fr;
     }
 
 }
