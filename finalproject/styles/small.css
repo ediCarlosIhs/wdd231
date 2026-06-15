@@ -245,7 +245,8 @@ main.projects {
 
 .project-card {
     background: var(--off-white);
-    max-width: 232px;
+    max-width: 298px;
+    height: auto;
     margin: 0 auto 1rem;
     text-align: center;
     padding-bottom: 1rem;
@@ -255,6 +256,7 @@ main.projects {
 
 .project-card h2, .project-card p {
     margin: .5rem 0;
+    padding: 0 10px;
 }
 
 .project-card p {
@@ -265,8 +267,8 @@ main.projects {
     width: fit-content;
     justify-self: center;
     border: none;
-    padding: .5rem;
-    border-radius: 8px;
+    padding: .5rem 1rem;
+    border-radius: 10px;
     background: var(--coral-red-contrast);
     color: var(--off-white);
 }

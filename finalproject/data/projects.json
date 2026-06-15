@@ -22,13 +22,6 @@
             "imagePath": "project3.webp"
         },
         {
-            "name": "Flexbox",
-            "description": "Using Styling with flexbox. Another alternative for positioning elements on the page.",
-            "deploy": "https://edicarlosihs.github.io/flexbox-2023/",
-            "repository": "https://github.com/ediCarlosIhs/flexbox-2023",
-            "imagePath": "project3.webp"
-        },
-        {
             "name": "HTML5 + CSS3",
             "description": "Very interesting project that I developed using the new HTML 5 tags.",
             "deploy": "https://edicarlosihs.github.io/html5-css3-i/",
@@ -66,7 +59,7 @@
         {
             "name": "Blog with React",
             "description": "In this project, React is used to consume REST API and render blog posts and comments.",
-            "deploy": "https://edicarlossilva.github.io/blogWithRest/",
+            "deploy": "https://edicarlosihs.github.io/blogWithRest/",
             "repository": "https://github.com/ediCarlosSilva/blogWithRest",
             "imagePath": "project9.webp"
         },
@@ -74,7 +67,7 @@
             "name": "React + styled-components",
             "description": "Technical test to be a front-end volunteer.",
             "deploy": "https://desafio-lacrei-rho.vercel.app/",
-            "repository": "https://github.com/ediCarlosSilva/desafio-lacrei",
+            "repository": "https://github.com/ediCarlosIhs/desafio-lacrei",
             "imagePath": "project10.webp"
         },
         {
