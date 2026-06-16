@@ -175,7 +175,7 @@ main.index {
 }
 
 h1 {
-    text-align: center;
+    /* text-align: center; */
     color: var(--coral-red);
 }
 
@@ -189,6 +189,7 @@ main.index p {
 
 .myName {
     font-size: 2.3rem;
+    text-align: center;
 }
 
 .myDream {
@@ -314,6 +315,7 @@ main.projects {
     border: none;
     background-color: transparent;
     color: var(--very-dark-indigo);
+    cursor: pointer;
 }
 
 #projectModal-details ul {
@@ -372,12 +374,12 @@ main.aboutme p {
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    padding: .5rem;
+    padding: .8rem;
     border-radius: 5px;
     border: 1px solid #999;
     font-size: 1rem;
     border-left-width: 5px;
-    max-width: 300px;
+    /* max-width: 300px; */
 }
 
 textarea {
