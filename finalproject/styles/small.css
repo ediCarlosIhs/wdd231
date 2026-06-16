@@ -44,16 +44,32 @@ header {
     height: 68px;
     padding: 10px;
     column-gap: 8px;
+    position: relative;
 }
 
 header .link-logo {
     text-align: center;
 }
 
-header img {
+header .link-logo img {
     /* justify-self: center; */
     width: 70px;
     height: auto;
+}
+
+.menu__translation {
+    display: flex;
+    position: absolute;
+    gap: 1rem;
+    right: 4rem;
+}
+
+.menu-flags {
+    width: 44px;
+}
+
+.menu-flags img {
+    max-width: 100%;
 }
 
 /* HAMBURGER */

@@ -16,7 +16,10 @@
         width: 100%;
     }
 
-
+    .menu__translation {
+        right: 20rem;
+        top: -3px;
+    }
 
     .hamburger {
         display: none;
