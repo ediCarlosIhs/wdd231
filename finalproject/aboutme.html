@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Edi Carlos Portfolio</title>
+
+    <meta name="description" content="This page is about me, my portfolio, and some projects I have done.">
+    <meta name="author" content="Edi Carlos">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="link-logo">
+            <img src="images/logo.svg" alt="Site logo" width="45" height="20">
+        </a>
+
+        <nav class="navigation" id="nav-bar">
+
+            <button id="ham-btn" class="hamburger" aria-label="Open navigation menu">
+                <span class="sr-only">menu</span>
+            </button>
+
+            <ul class="navigation-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li class="current"><a href="aboutme.html">About me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="aboutme">
+
+        <h1>About Me</h1>
+
+        <div class="aboutmeSection">
+
+            <section>
+                <p>My name is Edi Carlos da Silva. I have been working as IT support for many years. I also work as
+                    teacher in a public school.</p>
+
+                <p>I also have some job experience as Fullstack Developer in .Net Tecnology.</p>
+
+                <p>I graduated Systems Analyst and Developer in my Country, and I am improving my knowledge in Software
+                    Development in BYU. I would love an opportunity to work with you. So I did this portfolio to show
+                    some of my projects.</p>
+            </section>
+
+            <section class="contact-form">
+                <h2>Contact Me</h2>
+
+                <form action="thankyou.html" method="GET" class="form">
+
+                    <div class="field-box">
+                        <label for="yourName">Your Name</label>
+                        <input type="text" id="yourName" name="first" required autocomplete="given-name"
+                            title="How can I call you?">
+                    </div>
+
+                    <div class="field-box">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required autocomplete="email" title="Your Email"
+                            placeholder="john.doe@example.com">
+                    </div>
+
+                    <div class="field-box">
+                        <label for="description">What do you have in mind?</label>
+                        <textarea name="description" id="description"
+                            title="Write more descriptions of your company"></textarea>
+                    </div>
+
+                </form>
+
+            </section>
+
+
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> 🚀 Edi Carlos da Silva 🚀</p>
+        <p>Votorantim, Brazil</p>
+        <p id="lastModified">Last Modification</p>
+    </footer>
+
+</body>
+
+</html>

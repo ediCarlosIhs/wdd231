@@ -167,6 +167,7 @@ main.index {
     position: relative;
     padding: 10px;
     display: flex;
+    row-gap: 1rem;
     flex-direction: column;
     justify-content: space-evenly;
 
@@ -175,6 +176,7 @@ main.index {
 
 h1 {
     text-align: center;
+    color: var(--coral-red);
 }
 
 main.index p {
@@ -195,7 +197,7 @@ main.index p {
 
 .social {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     column-gap: 8px;
 }
 
@@ -222,7 +224,7 @@ main.index p {
 
 main.index .aboutme {
     text-align: right;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
 }
 
 .aboutme a {
@@ -334,6 +336,25 @@ main.projects {
     padding: .5rem 1rem;
     background: var(--coral-red);
     border-radius: 10px;
+}
+
+/* ABOUT ME PAGE */
+main.aboutme {
+    padding: 0 10px;
+}
+
+main.aboutme p {
+    color: var(--off-white);
+    line-height: 1.6rem;
+}
+
+.contact-form {
+    background: var(--off-white);
+}
+
+.contact-form h2 {
+    color: var(--coral-red);
+    text-align: center;
 }
 
 
