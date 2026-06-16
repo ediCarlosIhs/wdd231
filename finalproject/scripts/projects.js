@@ -1,6 +1,12 @@
 const article = document.querySelector("#projects");
 const path = './data/projects.json';
 
+const projectModal = document.querySelector("#projectModal");
+const closeModal = document.querySelector("#closeModal");
+
+const projectModalTitle = document.querySelector("#projectModal-title");
+const projectModalDetails = document.querySelector("#projectModal-details");
+
 async function getProjects() {
     try {
         const response = await fetch(path);
@@ -39,6 +45,9 @@ const displayProjects = (projects) => {
 
         const detailButton = document.createElement("button");
         detailButton.textContent= "See Details";
+        detailButton.addEventListener('click', () => {
+            callModal(project.name, project.deploy, project.repository, project.description);
+        })
 
         const section = document.createElement("section");
         section.classList.add("project-card");
@@ -52,5 +61,29 @@ const displayProjects = (projects) => {
 
 };
 
-
 getProjects();
+
+
+
+
+// modal code
+closeModal.addEventListener("click", () => {
+    projectModal.close();
+});
+
+function callModal(projectName, projectDeploy, projectRepository, projectDescription) {
+
+    projectModalTitle.textContent = projectName;
+
+    projectModalDetails.innerHTML = `
+        <p>${projectDescription}</p>
+        <ul>
+            <li><a href="${projectDeploy}" target="_blank">Deploy</a></li>
+            <li><a href="${projectRepository}" target="_blank">Repository</a></li>
+        </ul>
+    `
+
+
+    projectModal.showModal();
+
+}
