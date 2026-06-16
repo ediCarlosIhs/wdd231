@@ -14,7 +14,7 @@ const hiddendate = new Date(formInfo.get('hiddendate'));
 
 console.log(hiddendate);
 
-const formattedHiddendate = hiddendate.toLocaleString('pg-Br', {
+const formattedHiddendate = hiddendate.toLocaleString('pt-Br', {
     day: "2-digit",
     month: "2-digit",
     year: "numeric",

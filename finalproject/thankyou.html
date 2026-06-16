@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Edi Carlos Portfolio</title>
+
+    <meta name="description" content="This page is about me, my portfolio, and some projects I have done.">
+    <meta name="author" content="Edi Carlos">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="link-logo">
+            <img src="images/logo.svg" alt="Site logo" width="45" height="20">
+        </a>
+
+        <nav class="navigation" id="nav-bar">
+
+            <button id="ham-btn" class="hamburger" aria-label="Open navigation menu">
+                <span class="sr-only">menu</span>
+            </button>
+
+            <ul class="navigation-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="thankyou">
+
+        <h1>Thank you <span id="user"></span>!</h1>
+
+        <p id="submissionDate"></p>
+        <p>I appreciate your time filling the form. I will contact you in your e-mail:</p>
+
+        <div id="results"></div>
+
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> 🚀 Edi Carlos da Silva 🚀</p>
+        <p>Votorantim, Brazil</p>
+        <p id="lastModified">Last Modification</p>
+    </footer>
+
+</body>
+
+</html>

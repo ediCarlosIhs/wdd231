@@ -348,15 +348,87 @@ main.aboutme p {
     line-height: 1.6rem;
 }
 
-.contact-form {
+/* .contact-form {
     background: var(--off-white);
-}
+} */
 
 .contact-form h2 {
     color: var(--coral-red);
     text-align: center;
 }
 
+.contact-form .field-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: .3rem;
+    margin-bottom: .5rem;
+}
+
+.contact-form label {
+    font-weight: 700;
+    color: var(--coral-red);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: .5rem;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 1rem;
+    border-left-width: 5px;
+    max-width: 300px;
+}
+
+textarea {
+    overflow: auto;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border: 1px solid var(--coral-red);
+    border-left-width: 5px;
+}
+
+.contact-form input:required, .contact-form textarea {
+    border-left-color: #d70000;
+}
+
+.contact-form input:required:valid, .contact-form textarea:valid {
+    border-left-color: green;
+}
+
+.contact-form .field-submit {
+    text-align: center;
+}
+
+.contact-form input[type="submit"] {
+    border: none;
+    /* text-align: center; */
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    background: var(--coral-red-contrast);
+    color: var(--off-white);
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* THANKYOU PAGE */
+
+.thankyou {
+    padding: 0 1rem;
+}
+
+.thankyou p {
+    color: var(--off-white);
+}
+
+#results {
+    border: 1px solid var(--coral-red);
+    padding: 0 1rem;
+    color: var(--off-white);
+}
 
 footer {
     padding: 1rem 10px;

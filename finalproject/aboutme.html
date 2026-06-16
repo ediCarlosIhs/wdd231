@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="styles/large.css">
 
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/aboutme.js" defer></script>
     <script src="scripts/date.js" defer></script>
 
 </head>
@@ -76,14 +77,19 @@
 
                     <div class="field-box">
                         <label for="email">Email</label>
-                        <input type="email" id="email" required autocomplete="email" title="Your Email"
+                        <input type="email" id="email" name="email" required autocomplete="email" title="Your Email"
                             placeholder="john.doe@example.com">
                     </div>
 
                     <div class="field-box">
-                        <label for="description">What do you have in mind?</label>
-                        <textarea name="description" id="description"
-                            title="Write more descriptions of your company"></textarea>
+                        <label for="description">Message</label>
+                        <textarea name="description" id="description" title="Write a message" required></textarea>
+                    </div>
+
+                    <input type="hidden" name="hiddendate" id="today" value="">
+
+                    <div class="field-submit">
+                        <input type="submit" value="Send Message">
                     </div>
 
                 </form>
