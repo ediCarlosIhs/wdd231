@@ -327,7 +327,7 @@ main.projects {
 
 .projectModal-header button {
     font-size: 1.6rem;
-    border: 1px solid #555;
+    /* border: 1px solid #555; */
     border: none;
     background-color: transparent;
     color: var(--very-dark-indigo);
