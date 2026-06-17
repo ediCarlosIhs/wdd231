@@ -1,4 +1,4 @@
-import {changeToPortuguese, changeToEnglish} from './projectsPortuguese.js';
+import {changeToPortuguese, changeToEnglish} from './projects-portuguese.js';
 
 const article = document.querySelector("#projects");
 const path = './data/projects.json';

@@ -17,17 +17,20 @@ const projectsDescriptions = document.querySelectorAll('p');
 
 portugueseLanguage.addEventListener('click', () => {
     // console.log('portuguese language');
-    if (!idiom)
+    if (!localStorage.getItem('language')) {
         localStorage.setItem('language', 'pt-br');
+        changeToPortuguese();
+    }
 
-    changeToPortuguese();
 
 });
 
 englishLanguage.addEventListener('click', () => {
     // console.log('English language');
-    localStorage.removeItem('language');
-    changeToEnglish();
+    if (localStorage.getItem('language')) {
+        localStorage.removeItem('language');
+        changeToEnglish();
+    }
 });
 
 // if (idiom) {
@@ -47,7 +50,7 @@ export function changeToPortuguese() {
 
     h1.textContent = 'Projetos';
 
-    console.log(projectsNames);
+    // console.log(projectsNames);
 
     projectsNames.forEach(projectName => {
         const projectDescriptionSibling = projectName.parentElement.querySelector('p');
@@ -77,7 +80,7 @@ export function changeToEnglish() {
 
     h1.textContent = 'Projects';
 
-    console.log(projectsNames);
+    // console.log(projectsNames);
 
     projectsNames.forEach(projectName => {
         const projectDescriptionSibling = projectName.parentElement.querySelector('p');
