@@ -1,5 +1,5 @@
 import { places } from '../data/places.mjs';
-console.log(places);
+// console.log(places);
 
 const showHere = document.querySelector('#allplaces');
 

@@ -3,6 +3,9 @@ const englishLanguage = document.querySelector("#en");
 const idiom = localStorage.getItem('language');
 
 // page elements
+const projectsLink = document.querySelector("#projectsLink");
+const aboutmeLinks = document.querySelectorAll(".aboutmeLink");
+
 const h1 = document.querySelector('h1');
 const firstParagraph = document.querySelector("#firstParagraph");
 const secondParagraph = document.querySelector('#secondParagraph');
@@ -32,6 +35,12 @@ englishLanguage.addEventListener('click', () => {
 });
 
 function changeToPortuguese() {
+    projectsLink.textContent = 'Projetos';
+
+    aboutmeLinks.forEach(link => {
+        link.textContent = "Sobre Mim";
+    });
+
     h1.textContent = "Sobre Mim";
 
     firstParagraph.textContent = 'Olá, Sou Edi Carlos da Silva. Trabalhei por muitos anos como Suporte de TI em uma rede de Supermercados. E também sou professor Estadual em São Paulo.';
@@ -49,6 +58,13 @@ function changeToPortuguese() {
 }
 
 function changeToEnglish() {
+    projectsLink.textContent = 'Projects';
+
+    aboutmeLinks.forEach(link => {
+        link.textContent = "About Me";
+    });
+
+
     h1.textContent = "About Me";
 
     firstParagraph.textContent = 'Hi! I am Edi Carlos da Silva. I have been working as IT support for many years. I also work as teacher in a public school.';

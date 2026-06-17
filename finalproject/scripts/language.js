@@ -32,7 +32,7 @@ function changeToPortuguese() {
 
     aboutmeLinks.forEach(link => {
         link.textContent = "Sobre Mim";
-    })
+    });
 }
 
 function changeToEnglish() {

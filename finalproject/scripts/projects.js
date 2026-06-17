@@ -11,7 +11,7 @@ async function getProjects() {
     try {
         const response = await fetch(path);
         const data = await response.json();
-        console.table(data.projects);
+        // console.table(data.projects);
         displayProjects(data.projects);
     } catch (error) {
         console.error("Error fetching members", error);
