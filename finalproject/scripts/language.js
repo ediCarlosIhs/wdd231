@@ -7,8 +7,6 @@ const projectsLink = document.querySelector("#projectsLink");
 const aboutmeLinks = document.querySelectorAll(".aboutmeLink");
 const myDream = document.querySelector('.myDream');
 
-
-
 portugueseLanguage.addEventListener('click', () => {
     // console.log('portuguese language');
     if (!idiom)
@@ -22,7 +20,7 @@ englishLanguage.addEventListener('click', () => {
     // console.log('English language');
     localStorage.removeItem('language');
     changeToEnglish();
-})
+});
 
 if (idiom) {
     changeToPortuguese();
