@@ -263,6 +263,7 @@ main.index .aboutme {
 
 main.projects {
     color: var(--coral-red);
+    padding: 0 10px;
 }
 
 #projects {
