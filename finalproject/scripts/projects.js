@@ -1,5 +1,8 @@
+import {changeToPortuguese, changeToEnglish} from './projectsPortuguese.js';
+
 const article = document.querySelector("#projects");
 const path = './data/projects.json';
+const idiom = localStorage.getItem('language');
 
 const projectModal = document.querySelector("#projectModal");
 const closeModal = document.querySelector("#closeModal");
@@ -13,6 +16,9 @@ async function getProjects() {
         const data = await response.json();
         // console.table(data.projects);
         displayProjects(data.projects);
+        if (idiom) {
+            changeToPortuguese();
+        }
     } catch (error) {
         console.error("Error fetching members", error);
     }

@@ -30,12 +30,12 @@ englishLanguage.addEventListener('click', () => {
     changeToEnglish();
 });
 
-if (idiom) {
-    // console.log(projectsNames);
-    changeToPortuguese();
-}
+// if (idiom) {
+//     // console.log(projectsNames);
+//     changeToPortuguese();
+// }
 
-function changeToPortuguese() {
+export function changeToPortuguese() {
     
     const projectsNames = document.querySelectorAll('h2');
 
@@ -66,7 +66,7 @@ function changeToPortuguese() {
     });
 }
 
-function changeToEnglish() {
+export function changeToEnglish() {
     const projectsNames = document.querySelectorAll('h2');
 
     projectsLink.textContent = 'Projects';
