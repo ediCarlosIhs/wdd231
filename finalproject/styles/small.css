@@ -453,3 +453,8 @@ footer {
     color: var(--coral-red);
     text-align: center;
 }
+
+footer a {
+    color: var(--coral-red);
+    text-decoration: none;
+}
