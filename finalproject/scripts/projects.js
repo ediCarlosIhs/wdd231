@@ -2,7 +2,6 @@ import {changeToPortuguese, changeToEnglish} from './projects-portuguese.js';
 
 const article = document.querySelector("#projects");
 const path = './data/projects.json';
-const idiom = localStorage.getItem('language');
 
 const projectModal = document.querySelector("#projectModal");
 const closeModal = document.querySelector("#closeModal");
@@ -16,7 +15,7 @@ async function getProjects() {
         const data = await response.json();
         // console.table(data.projects);
         displayProjects(data.projects);
-        if (idiom) {
+        if (localStorage.getItem('language')) {
             changeToPortuguese();
         }
     } catch (error) {
@@ -43,6 +42,7 @@ const displayProjects = (projects) => {
 
         // create the header
         const projectName = document.createElement("h2");
+        projectName.classList.add('projectName');
         projectName.textContent = project.name;
 
         // create the project description

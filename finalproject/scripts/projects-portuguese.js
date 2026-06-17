@@ -40,7 +40,9 @@ englishLanguage.addEventListener('click', () => {
 
 export function changeToPortuguese() {
     
-    const projectsNames = document.querySelectorAll('h2');
+    const projectsNames = document.querySelectorAll('h2.projectName');
+    // console.log("change to portuguese");
+    // console.log(projectsNames);
 
     projectsLink.textContent = 'Projetos';
 
@@ -70,7 +72,9 @@ export function changeToPortuguese() {
 }
 
 export function changeToEnglish() {
-    const projectsNames = document.querySelectorAll('h2');
+    const projectsNames = document.querySelectorAll('h2.projectName');
+    // console.log("change to English");
+    // console.log(projectsNames);
 
     projectsLink.textContent = 'Projects';
 
