@@ -316,7 +316,7 @@ main.projects {
     margin-bottom: 1rem;
 }
 
-.projectModal-header h4 {
+.projectModal-header h2 {
     color: var(--coral-red);
     margin: 0;
     font-size: 1.4rem;
