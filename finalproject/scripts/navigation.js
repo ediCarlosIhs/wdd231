@@ -6,4 +6,6 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('show');
     navBar.classList.toggle('show');
     body.classList.toggle('body-no-scroll');
+
+    hamButton.tex
 });
